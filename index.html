@@ -12,7 +12,7 @@
 <body>
 
 
-    <section class="main__section">
+    <section id="section" class="main__section">
         <img id="heart-left" class="main__section-heart--left" src="./assets/shapes/heart.svg" alt="">
         <img id="heart-right" class="main__section-heart--right" src="./assets/shapes/heart.svg" alt="">
         <h2 id="first-title" class="first-title">Feliz dia 18</h2>
@@ -29,13 +29,13 @@
                 uma escolha e a melhor que eu ja fiz na vida, torco muito por nos, toda noite eu que nao sou religioso reso pro universo pra que isso tudo tenha um final feliz. 
                 <br> Mas de tudo isso, o mais importante de tudo e que eu torco por voce, e torco para que voce seja feliz e que voce tenha uma vida maravilhosa, seja do meu lado 
                 ou nao. 
-
                 <br>P.s. I love You
             </p>
         </div>
     </section>
     <script>
         document.getElementById("button").addEventListener("click", () => {
+            document.getElementById("section").style.className="main__section main__section--animate";
             document.getElementById("heart-left").className="main__section-heart--left main__section-heart--left--animate";
             document.getElementById("heart-right").className="main__section-heart--right main__section-heart--right--animate";
             document.getElementById("rectangle").className="main__section-rectangle main__section-rectangle--animate";

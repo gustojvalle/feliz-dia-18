@@ -11,10 +11,12 @@ body,  html{
 
 @keyframes box-animation {
   from{
-    transform: scaleX(0%) scaleY(90%);
+    transform: scaleX(0) scaleY(0.9);
+    -webkit-transform: scaleX(0%) scaleY(90%);
   }
   to{
-    transform: scaleX(100%) scaleY(90%);
+    transform: scaleX(1) scaleY(0.9);
+    -webkit-transform: scaleX(100%) scaleY(90%);
   }
 }
 
@@ -43,8 +45,8 @@ body,  html{
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: rgba($color: #E2C290, $alpha: 0.87);
+
   &-button{
     position: absolute;
     top: 6vh;
@@ -75,7 +77,7 @@ body,  html{
     align-items: center;
     height: 60vh;
     width: 50vw;
-    transform: scaleX(0%) scaleY(80%);
+    transform: scaleX(0) scaleY(0.9);
     
     background-color:rgba($color: #f0396b, $alpha: 0.87);
     position: absolute;
