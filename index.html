@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+    <title>Happy 18th</title>
+</head>
+<body>
+
+
+    <section class="main__section">
+        <img id="heart-left" class="main__section-heart--left" src="./assets/shapes/heart.svg" alt="">
+        <img id="heart-right" class="main__section-heart--right" src="./assets/shapes/heart.svg" alt="">
+        <h2 id="first-title" class="first-title">Feliz dia 18</h2>
+        <button id="button" class="main__section-button">Click for a surprise!</button>
+        <div id="rectangle" class="main__section-rectangle">
+            <h1 class="main__section-rectangle-title">I Love You</h1>
+            <p class="main__section-rectangle-paragraph">So pra te dizer que independente de tudo que aconteceu e do que vai acontecer daqui para frente
+                eu quero te dizer que eu sempro vou lembrar dessa data como o dia em que eu conheci a mulher mais forte, maravilhosa, gostosa, paciente, engracada... 
+                <br> Apesar de nao estarmos juntos no momento, eu sei que isso e um aprendizado para nos e independente do resultado eu quero que voce saiba que 
+                pode contar comigo para tudo e eu digo tudo, de verdade. 
+                <br> Independente de tudo eu queria que voce soubesse que eu tenho o maior carinho do mundo por voce, e estou super feliz que voce tambem esta cuidando de voce
+                sabe, gosto de conversar sobre investimento, sobre a Bruna, reclamar do calor, pensar no futuro, eu amo estar perto de ti e esse tempo ta me ajudando a refletir 
+                nas minhas atitudes e perceber que eu nao te dei a atencao que eu gostaria de ter dado e eu estava em uma posicao horrivel na vida. Mas hoje eu sei que voce foi
+                uma escolha e a melhor que eu ja fiz na vida, torco muito por nos, toda noite eu que nao sou religioso reso pro universo pra que isso tudo tenha um final feliz. 
+                <br> Mas de tudo isso, o mais importante de tudo e que eu torco por voce, e torco para que voce seja feliz e que voce tenha uma vida maravilhosa, seja do meu lado 
+                ou nao. 
+
+                <br>P.s. I love You
+            </p>
+        </div>
+    </section>
+    <script>
+        document.getElementById("button").addEventListener("click", () => {
+            document.getElementById("heart-left").className="main__section-heart--left main__section-heart--left--animate";
+            document.getElementById("heart-right").className="main__section-heart--right main__section-heart--right--animate";
+            document.getElementById("rectangle").className="main__section-rectangle main__section-rectangle--animate";
+            document.getElementById("first-title").style.display="none";
+        })
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+body,  html{
+  box-sizing: border-box;
+  font-family: 'Pacifico', cursive;
+  
+}
+
+*::after, *::before, *{
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes box-animation {
+  from{
+    transform: scaleX(0%) scaleY(90%);
+  }
+  to{
+    transform: scaleX(100%) scaleY(90%);
+  }
+}
+
+
+@keyframes heart-translates-left {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-25vw);
+  }
+}
+
+@keyframes heart-translates-right {
+  from{
+    transform: rotateY(180deg) translateX(0);
+  }to{
+    transform: rotateY(180deg) translateX(-25vw);
+  }
+}
+
+
+
+.main__section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba($color: #E2C290, $alpha: 0.87);
+  &-button{
+    position: absolute;
+    top: 6vh;
+    background-color:rgba($color: #6B2D5C, $alpha: 0.87) ;
+    border: none;
+    height: 8vh;
+    width: 20vh;
+    border-radius: 3rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.0rem;
+    color: rgba($color: #F8C0C8, $alpha: 0.87);
+  }
+  
+  &-heart--left{
+    height:60vh;
+    width: auto;
+    fill: #F0386B;
+  }
+  &-heart--right{
+    height: 60vh;
+    width: auto;
+    transform: rotateY(180deg);
+  }
+
+  &-rectangle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 50vw;
+    transform: scaleX(0%) scaleY(80%);
+    
+    background-color:rgba($color: #f0396b, $alpha: 0.87);
+    position: absolute;
+
+    bottom:17vh;
+    &-title{
+      padding-top: 1rem;
+      font-size: 3rem;
+      color: rgba($color: #F8C0C8, $alpha: 0.87);
+    }
+    &-paragraph{
+      text-align: center;
+      font-size: 1rem;
+      color: rgba($color: #F8C0C8, $alpha: 0.87);
+    }
+  }
+}
+
+
+
+
+// animation classes
+.main__section-heart--right--animate{
+  animation-name: heart-translates-right;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  }
+
+.main__section-heart--left--animate{
+  animation-name: heart-translates-left;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  }
+
+.main__section-rectangle--animate{
+  animation-name: box-animation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.first-title{
+  font-size: 8rem;
+  position: absolute;
+  color: rgba($color: #F8C0C8, $alpha: 0.87);
+  text-shadow:
+  -1px -1px 0  rgba($color: #6B2D5C, $alpha: 0.87),  
+   1px -1px 0  rgba($color: #6B2D5C, $alpha: 0.87),
+   -1px 1px 0  rgba($color: #6B2D5C, $alpha: 0.87),
+    1px 1px 0 rgba($color: #6B2D5C, $alpha: 0.87);
+}
