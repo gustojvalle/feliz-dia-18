@@ -39,16 +39,6 @@ body,  html{
 
 
 
-  .main__section{
-    position: relative;
-    height: 300vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba($color: #E2C290, $alpha: 0.87);
-  }
-
-  
 
 .main__section{
   position: relative;
@@ -57,6 +47,8 @@ body,  html{
   justify-content: center;
   align-items: center;
   background-color: rgba($color: #E2C290, $alpha: 0.87);
+  overflow: scroll;
+
 
   &-button{
     position: absolute;
