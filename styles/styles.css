@@ -101,12 +101,12 @@ body, html {
 .main__section-rectangle-title {
   padding-top: 1rem;
   font-size: 3rem;
-  color: rgba(248, 192, 200, 0.87);
+  color: white;
 }
 .main__section-rectangle-paragraph {
   text-align: center;
   font-size: 1rem;
-  color: rgba(248, 192, 200, 0.87);
+  color: white;
 }
 
 .main__section-heart--right--animate {
