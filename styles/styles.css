@@ -61,6 +61,17 @@ body, html {
     transform: rotateY(180deg) translateX(-25vw);
   }
 }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main__section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(226, 194, 144, 0.87);
+  }
+}
 .main__section {
   position: relative;
   height: 100vh;
@@ -92,7 +103,6 @@ body, html {
   transform: rotateY(180deg);
 }
 .main__section-rectangle {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,15 +114,14 @@ body, html {
   bottom: 17vh;
 }
 .main__section-rectangle-title {
+  padding-top: 1rem;
   font-size: 3rem;
   color: white;
-  padding-top: -100rem;
 }
 .main__section-rectangle-paragraph {
   text-align: center;
   font-size: 1rem;
   color: white;
-  margin: -1rem;
 }
 
 .main__section-heart--right--animate {
